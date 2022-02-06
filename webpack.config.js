@@ -27,7 +27,7 @@ module.exports = {
         path: __dirname + '/build'
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: 'estilo.css' }),
+        new MiniCssExtractPlugin({ filename: 'style.css' }),
         new CopyWebpackPlugin([
             { context: 'src/', from: '**/*.html' },
             { context: 'src/', from: 'imgs/**/*' }
