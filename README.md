@@ -34,5 +34,8 @@ yarn
 > start the development server (using YARN)
 
 ```bash
-yarn dev
+yarn start
 ```
+## 🖼 Preview
+
+<img src="preview.png">
