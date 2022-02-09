@@ -39,7 +39,7 @@ $.fn.cityButtons = function () {
     btnAll.click(e => filterByCity(null))
     btns.push(btnAll)
 
-    const btnGroup = $('<div>').addClass(['btn-group'])
+    const btnGroup = $('<div>').addClass(['btn-group', 'd-flex', 'flex-wrap'])
     btnGroup.append(btns)
 
     $(this).html(btnGroup)
