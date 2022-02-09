@@ -14,3 +14,24 @@
 footer{
     padding: 3rem 0;
 }
+
+.btn-group{
+    overflow: hidden;
+}
+
+.img-fluid{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+
+    border-radius: 4px;
+    object-position: center;
+    transition: 0.2s;
+}
+
+.img-fluid:hover{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.523);
+    transition: 0.2s;
+    object-position: 0.1px 0;
+
+}

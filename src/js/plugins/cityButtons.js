@@ -28,14 +28,14 @@ $.fn.cityButtons = function () {
 
     const btns = Array.from(cities).map(city => {
         const btn = $('<button>')
-            .addClass(['btn', 'btn-info']).html(city)
+            .addClass(['btn', 'btn-info', 'rounded-0']).html(city)
 
         btn.click(e => filterByCity(city))
         return btn
     })
 
     const btnAll = $('<button>')
-        .addClass(['btn', 'btn-info', 'active']).html('Todas')
+        .addClass(['btn', 'btn-info', 'active', 'rounded-0']).html('Todas')
     btnAll.click(e => filterByCity(null))
     btns.push(btnAll)
 
