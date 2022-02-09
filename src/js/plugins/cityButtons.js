@@ -5,8 +5,8 @@ import { onLoadHtmlSuccess } from '../core/includes'
 const duration = 600
 
 function filterByCity(city) {
-    $('[wm-city]').each(function (i, e) {
-        const isTarget = $(this).attr('wm-city') === city
+    $('[wm-type]').each(function (i, e) {
+        const isTarget = $(this).attr('wm-type') === city
             || city === null
         if (isTarget) {
             $(this).parent().removeClass('d-none')
@@ -22,8 +22,8 @@ function filterByCity(city) {
 $.fn.cityButtons = function () {
     const cities = new Set // set nao tem repeticao
 
-    $('[wm-city]').each((i, e) => {
-        cities.add($(e).attr('wm-city'))
+    $('[wm-type]').each((i, e) => {
+        cities.add($(e).attr('wm-type'))
     })
 
     const btns = Array.from(cities).map(city => {
